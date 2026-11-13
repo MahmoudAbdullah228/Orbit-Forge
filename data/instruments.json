@@ -1,0 +1,146 @@
+[
+  {
+    "id": "stereo-camera",
+    "name": "3D Stereo Mapping Camera",
+    "category": "optical",
+    "description": "Dual telescopic high-resolution optical cameras that take paired images at offset angles to compute 3D digital elevation models and crater topography.",
+    "real": {
+      "verified": true,
+      "source": "https://lunar.gsfc.nasa.gov/lroc.html",
+      "source_name": "NASA LRO Camera (LROC) Science Team",
+      "flight_heritage": "Lunar Reconnaissance Orbiter (LROC)",
+      "mass_kg": 16.5,
+      "power_watts": 18.0,
+      "data_rate_mbps": 40.0
+    },
+    "game": {
+      "mass": 8,
+      "power": 10,
+      "cost": 10,
+      "data_rate": 20,
+      "science_value": 15,
+      "suitable_missions": ["moon", "mars", "earth"]
+    },
+    "image": "/assets/realistic/instruments/camera.png"
+  },
+  {
+    "id": "laser-altimeter",
+    "name": "Lunar Laser Altimeter (LOLA)",
+    "category": "lidar",
+    "description": "Fires 28 pulses per second in a 5-beam pattern to measure surface elevation, surface roughness, and slope with sub-meter vertical precision.",
+    "real": {
+      "verified": true,
+      "source": "https://lunar.gsfc.nasa.gov/lola.html",
+      "source_name": "NASA Goddard LOLA Instrument Suite",
+      "flight_heritage": "Lunar Reconnaissance Orbiter",
+      "mass_kg": 11.4,
+      "power_watts": 30.8,
+      "data_rate_mbps": 0.05
+    },
+    "game": {
+      "mass": 10,
+      "power": 18,
+      "cost": 15,
+      "data_rate": 15,
+      "science_value": 22,
+      "suitable_missions": ["moon", "earth"]
+    },
+    "image": "/assets/realistic/instruments/altimeter.png"
+  },
+  {
+    "id": "neutron-spectrometer",
+    "name": "Thermal Neutron Spectrometer",
+    "category": "nuclear",
+    "description": "Detects moderation of cosmic-ray neutrons leaking from planetary soil, directly measuring hydrogen concentration and buried water-ice abundance.",
+    "real": {
+      "verified": true,
+      "source": "https://lunar.gsfc.nasa.gov/lend.html",
+      "source_name": "NASA LEND (Lunar Exploration Neutron Detector)",
+      "flight_heritage": "LRO / Lunar Prospector",
+      "mass_kg": 25.8,
+      "power_watts": 11.6,
+      "data_rate_mbps": 0.005
+    },
+    "game": {
+      "mass": 12,
+      "power": 12,
+      "cost": 18,
+      "data_rate": 10,
+      "science_value": 26,
+      "suitable_missions": ["moon", "mars"]
+    },
+    "image": "/assets/realistic/instruments/spectrometer.png"
+  },
+  {
+    "id": "radar-sounder",
+    "name": "Subsurface Radar Sounder",
+    "category": "radar",
+    "description": "Deep-penetrating synthetic aperture ground radar capable of detecting dielectric boundaries between rock, regolith, and water-ice layers up to 10 meters deep.",
+    "real": {
+      "verified": true,
+      "source": "https://mars.nasa.gov/mars2020/spacecraft/instruments/rimfax/",
+      "source_name": "NASA Mars 2020 RIMFAX / ESA MARSIS",
+      "flight_heritage": "Mars 2020 Perseverance & Mars Express",
+      "mass_kg": 3.0,
+      "power_watts": 15.0,
+      "data_rate_mbps": 0.1
+    },
+    "game": {
+      "mass": 14,
+      "power": 16,
+      "cost": 20,
+      "data_rate": 25,
+      "science_value": 28,
+      "suitable_missions": ["moon", "mars"]
+    },
+    "image": "/assets/realistic/instruments/radar.png"
+  },
+  {
+    "id": "gas-spectrometer",
+    "name": "Atmospheric Gas Spectrometer",
+    "category": "spectrometer",
+    "description": "Neutral gas and ion mass spectrometer measuring the molecular composition and isotope ratios of thin planetary atmospheres to study atmospheric loss.",
+    "real": {
+      "verified": true,
+      "source": "https://lasp.colorado.edu/maven/science/instruments/ngims/",
+      "source_name": "NASA MAVEN NGIMS Instrument",
+      "flight_heritage": "MAVEN Mars Atmosphere Mission",
+      "mass_kg": 13.0,
+      "power_watts": 35.0,
+      "data_rate_mbps": 0.02
+    },
+    "game": {
+      "mass": 11,
+      "power": 20,
+      "cost": 16,
+      "data_rate": 15,
+      "science_value": 24,
+      "suitable_missions": ["mars", "earth"]
+    },
+    "image": "/assets/realistic/instruments/gas-sensor.png"
+  },
+  {
+    "id": "hyperspectral-imager",
+    "name": "Hyperspectral Earth & Mineral Imager",
+    "category": "optical",
+    "description": "Captures 256 contiguous spectral bands from visible to shortwave infrared (0.4 to 2.5 micrometers) to identify minerals, vegetation health, and greenhouse gas plumes.",
+    "real": {
+      "verified": true,
+      "source": "https://earth.jpl.nasa.gov/emit/",
+      "source_name": "NASA Earth Surface Mineral Dust Source Investigation (EMIT)",
+      "flight_heritage": "International Space Station / Mars Reconnaissance Orbiter (CRISM)",
+      "mass_kg": 95.0,
+      "power_watts": 85.0,
+      "data_rate_mbps": 40.0
+    },
+    "game": {
+      "mass": 15,
+      "power": 24,
+      "cost": 22,
+      "data_rate": 30,
+      "science_value": 30,
+      "suitable_missions": ["earth", "mars"]
+    },
+    "image": "/assets/realistic/instruments/hyperspectral.png"
+  }
+]

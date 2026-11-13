@@ -1,0 +1,455 @@
+[
+  {
+    "id": "moon-exploration",
+    "title": "Moon: Artemis Frontier",
+    "destination": "Moon",
+    "difficulty": "Intermediate",
+    "image": "/assets/realistic/destinations/moon.png",
+    "backdrop": "horizon-dusk",
+    "description": "Design lunar orbiters and robotic polar prospectors to discover water ice hidden in permanently shadowed craters at the Moon's South Pole.",
+    "missions": [
+      {
+        "id": "moon-m1",
+        "number": 1,
+        "title": "Lunar Reconnaissance & Mineral Mapping",
+        "description": "Select launch rocket, 3D stereo imager, and solar power bus to map the sunlit lunar plains and crater topography.",
+        "difficulty": "Standard",
+        "required_orbit": "LUNAR_POLAR",
+        "tasks": [
+          { "id": "t1", "label": "Map 3D crater elevation profiles", "target": "stereo-camera" },
+          { "id": "t2", "label": "Achieve stable polar observation orbit", "target": "LUNAR_POLAR" },
+          { "id": "t3", "label": "Maintain ≥ 20% power reserve in eclipse", "target": "power" }
+        ],
+        "constraints": {
+          "max_mass": 80,
+          "max_power": 90,
+          "max_budget": 75,
+          "min_comms": 40,
+          "duration": 24
+        },
+        "initial_resources": {
+          "budget": 70,
+          "mass": 20,
+          "power": 60,
+          "scientific_value": 10,
+          "communication": 50,
+          "time": 24
+        }
+      },
+      {
+        "id": "moon-m2",
+        "number": 2,
+        "title": "Polar Crater Water-Ice Prospecting",
+        "description": "Equip high-energy neutron spectrometer and thermal insulation blankets to survey hydrogen anomalies inside Shackleton Crater.",
+        "difficulty": "Challenging",
+        "required_orbit": "LUNAR_POLAR",
+        "tasks": [
+          { "id": "t1", "label": "Detect hydrogen signatures in cold traps", "target": "neutron-spectrometer" },
+          { "id": "t2", "label": "Install thermal heaters for -200°C shadows", "target": "power" },
+          { "id": "t3", "label": "Maintain continuous Earth communication", "target": "xband-dish" }
+        ],
+        "constraints": {
+          "max_mass": 85,
+          "max_power": 95,
+          "max_budget": 80,
+          "min_comms": 50,
+          "duration": 28
+        },
+        "initial_resources": {
+          "budget": 65,
+          "mass": 25,
+          "power": 55,
+          "scientific_value": 15,
+          "communication": 45,
+          "time": 28
+        }
+      },
+      {
+        "id": "moon-m3",
+        "number": 3,
+        "title": "South Pole Autonomous Hopper",
+        "description": "Configure propulsion mass and high-capacity dual batteries to hop across rugged ridges and explore multiple lunar craters.",
+        "difficulty": "Advanced",
+        "required_orbit": "LUNAR_POLAR",
+        "tasks": [
+          { "id": "t1", "label": "Execute multi-site landing sequence", "target": "dual-lithium-battery" },
+          { "id": "t2", "label": "Transmit surface radar sounding profiles", "target": "radar-sounder" },
+          { "id": "t3", "label": "Reserve 25% thruster margin for return hop", "target": "mass" }
+        ],
+        "constraints": {
+          "max_mass": 90,
+          "max_power": 100,
+          "max_budget": 85,
+          "min_comms": 55,
+          "duration": 30
+        },
+        "initial_resources": {
+          "budget": 60,
+          "mass": 30,
+          "power": 65,
+          "scientific_value": 20,
+          "communication": 50,
+          "time": 30
+        }
+      },
+      {
+        "id": "moon-m4",
+        "number": 4,
+        "title": "Far Side Subsurface Radar Survey",
+        "description": "Deploy deep-penetrating radar sounder to map buried basalt flows and crustal layering on the radio-quiet lunar far side.",
+        "difficulty": "Hard",
+        "required_orbit": "LUNAR_POLAR",
+        "tasks": [
+          { "id": "t1", "label": "Acquire subsurface radar echoes to 10m depth", "target": "radar-sounder" },
+          { "id": "t2", "label": "Use Ka-band relay link through halo orbiter", "target": "kaband-phased-array" },
+          { "id": "t3", "label": "Balance radar power draw with battery storage", "target": "power" }
+        ],
+        "constraints": {
+          "max_mass": 95,
+          "max_power": 110,
+          "max_budget": 90,
+          "min_comms": 65,
+          "duration": 36
+        },
+        "initial_resources": {
+          "budget": 58,
+          "mass": 32,
+          "power": 60,
+          "scientific_value": 25,
+          "communication": 40,
+          "time": 36
+        }
+      },
+      {
+        "id": "moon-m5",
+        "number": 5,
+        "title": "Lunar Gateway Communications Network",
+        "description": "Establish a high-throughput deep-space optical transceiver network in near-rectilinear halo orbit connecting Moon and Earth.",
+        "difficulty": "Master",
+        "required_orbit": "LUNAR_POLAR",
+        "tasks": [
+          { "id": "t1", "label": "Deploy optical laser transceiver", "target": "laser-optical-relay" },
+          { "id": "t2", "label": "Sustain gigabit downlink bandwidth", "target": "laser-optical-relay" },
+          { "id": "t3", "label": "Ensure continuous power via deployable wings", "target": "deployable-solar-wings" }
+        ],
+        "constraints": {
+          "max_mass": 105,
+          "max_power": 120,
+          "max_budget": 100,
+          "min_comms": 80,
+          "duration": 48
+        },
+        "initial_resources": {
+          "budget": 60,
+          "mass": 35,
+          "power": 70,
+          "scientific_value": 30,
+          "communication": 60,
+          "time": 48
+        }
+      }
+    ]
+  },
+  {
+    "id": "mars-exploration",
+    "title": "Mars: Red Planet Odyssey",
+    "destination": "Mars",
+    "difficulty": "Advanced",
+    "image": "/assets/realistic/destinations/mars.png",
+    "backdrop": "deep-space",
+    "description": "Fly across 200 million kilometers of deep space, brave Martian dust storms, execute daring aerobraking passes, and search for ancient microbial biosignatures.",
+    "missions": [
+      {
+        "id": "mars-m1",
+        "number": 1,
+        "title": "Atmospheric Aerobraker & Dust Monitor",
+        "description": "Skim Mars's upper atmosphere using ceramic thermal shielding to circularize orbit without heavy fuel burn.",
+        "difficulty": "Standard",
+        "required_orbit": "MARS_LOW_ORBIT",
+        "tasks": [
+          { "id": "t1", "label": "Survive 400 aerobraking friction passes", "target": "MARS_LOW_ORBIT" },
+          { "id": "t2", "label": "Sample escaping atmospheric argon and CO2", "target": "gas-spectrometer" },
+          { "id": "t3", "label": "Maintain thermal balance during solar flares", "target": "power" }
+        ],
+        "constraints": {
+          "max_mass": 90,
+          "max_power": 100,
+          "max_budget": 85,
+          "min_comms": 50,
+          "duration": 36
+        },
+        "initial_resources": {
+          "budget": 60,
+          "mass": 25,
+          "power": 55,
+          "scientific_value": 15,
+          "communication": 45,
+          "time": 36
+        }
+      },
+      {
+        "id": "mars-m2",
+        "number": 2,
+        "title": "Gale Crater Ancient Lakebed Rover",
+        "description": "Equip MMRTG nuclear power to withstand freezing nights and global dust storms while exploring clay-rich lakebed strata.",
+        "difficulty": "Challenging",
+        "required_orbit": "MARS_LOW_ORBIT",
+        "tasks": [
+          { "id": "t1", "label": "Power continuous driving through dust storms", "target": "mmrtg-nuclear" },
+          { "id": "t2", "label": "Identify hydrated clay minerals with spectrometer", "target": "hyperspectral-imager" },
+          { "id": "t3", "label": "High-gain downlink to NASA Deep Space Network", "target": "xband-dish" }
+        ],
+        "constraints": {
+          "max_mass": 105,
+          "max_power": 115,
+          "max_budget": 95,
+          "min_comms": 55,
+          "duration": 48
+        },
+        "initial_resources": {
+          "budget": 55,
+          "mass": 32,
+          "power": 60,
+          "scientific_value": 20,
+          "communication": 50,
+          "time": 48
+        }
+      },
+      {
+        "id": "mars-m3",
+        "number": 3,
+        "title": "Subsurface Glacial Radar Sounder",
+        "description": "Map buried pure water-ice sheets across Utopia Planitia to identify landing sites for future human exploration.",
+        "difficulty": "Hard",
+        "required_orbit": "MARS_LOW_ORBIT",
+        "tasks": [
+          { "id": "t1", "label": "Sound underground ice deposits to 50m depth", "target": "radar-sounder" },
+          { "id": "t2", "label": "Transmit multi-gigabyte radar profiles home", "target": "kaband-phased-array" },
+          { "id": "t3", "label": "Maintain positive power at Mars solar distance", "target": "deployable-solar-wings" }
+        ],
+        "constraints": {
+          "max_mass": 110,
+          "max_power": 120,
+          "max_budget": 100,
+          "min_comms": 65,
+          "duration": 50
+        },
+        "initial_resources": {
+          "budget": 52,
+          "mass": 35,
+          "power": 55,
+          "scientific_value": 25,
+          "communication": 45,
+          "time": 50
+        }
+      },
+      {
+        "id": "mars-m4",
+        "number": 4,
+        "title": "Phobos & Deimos High-Res Survey",
+        "description": "Perform close-proximity flybys of Mars's captured asteroid moons to inspect surface regolith and crater monoliths.",
+        "difficulty": "Advanced",
+        "required_orbit": "MARS_LOW_ORBIT",
+        "tasks": [
+          { "id": "t1", "label": "Map Phobos Stickney Crater at 20cm resolution", "target": "stereo-camera" },
+          { "id": "t2", "label": "Measure surface gravity and regolith density", "target": "laser-altimeter" },
+          { "id": "t3", "label": "Execute micro-thruster rendezvous burns", "target": "mass" }
+        ],
+        "constraints": {
+          "max_mass": 115,
+          "max_power": 125,
+          "max_budget": 105,
+          "min_comms": 70,
+          "duration": 52
+        },
+        "initial_resources": {
+          "budget": 50,
+          "mass": 38,
+          "power": 58,
+          "scientific_value": 28,
+          "communication": 48,
+          "time": 52
+        }
+      },
+      {
+        "id": "mars-m5",
+        "number": 5,
+        "title": "Interplanetary Sample Return Carrier",
+        "description": "Intercept the Mars Ascent Vehicle in low Martian orbit, capture sealed rock core tubes, and fire the trans-Earth injection burn.",
+        "difficulty": "Master",
+        "required_orbit": "MARS_LOW_ORBIT",
+        "tasks": [
+          { "id": "t1", "label": "Autonomous rendezvous with orbiting sample container", "target": "stereo-camera" },
+          { "id": "t2", "label": "Deep-space laser telemetry to Earth receiving dish", "target": "laser-optical-relay" },
+          { "id": "t3", "label": "Execute escape velocity injection within fuel budget", "target": "mass" }
+        ],
+        "constraints": {
+          "max_mass": 130,
+          "max_power": 140,
+          "max_budget": 120,
+          "min_comms": 85,
+          "duration": 60
+        },
+        "initial_resources": {
+          "budget": 50,
+          "mass": 42,
+          "power": 65,
+          "scientific_value": 35,
+          "communication": 55,
+          "time": 60
+        }
+      }
+    ]
+  },
+  {
+    "id": "earth-observation",
+    "title": "Earth: Climate Sentinel",
+    "destination": "Earth",
+    "difficulty": "Beginner",
+    "image": "/assets/realistic/destinations/earth.png",
+    "backdrop": "horizon-dusk",
+    "description": "Design remote-sensing Earth observatories to measure global ice-sheet melting rates, monitor wildfire smoke plumes, and track greenhouse gas concentrations.",
+    "missions": [
+      {
+        "id": "earth-m1",
+        "number": 1,
+        "title": "Polar Ice Cap Elevation Altimetry",
+        "description": "Launch into Sun-Synchronous Orbit with a precision laser altimeter to measure Greenland and Antarctic ice sheet thickness variations.",
+        "difficulty": "Standard",
+        "required_orbit": "SSO",
+        "tasks": [
+          { "id": "t1", "label": "Achieve 98.2° Sun-Synchronous Orbit", "target": "SSO" },
+          { "id": "t2", "label": "Measure polar ice sheet elevation changes", "target": "laser-altimeter" },
+          { "id": "t3", "label": "Maintain continuous power in near-constant sunlight", "target": "compact-solar-array" }
+        ],
+        "constraints": {
+          "max_mass": 65,
+          "max_power": 80,
+          "max_budget": 60,
+          "min_comms": 40,
+          "duration": 36
+        },
+        "initial_resources": {
+          "budget": 75,
+          "mass": 18,
+          "power": 65,
+          "scientific_value": 15,
+          "communication": 60,
+          "time": 36
+        }
+      },
+      {
+        "id": "earth-m2",
+        "number": 2,
+        "title": "Ocean Salinity & Sea Surface Radar",
+        "description": "Equip synthetic aperture radar to map global sea surface heights, ocean currents, and hurricane wind speeds.",
+        "difficulty": "Challenging",
+        "required_orbit": "LEO",
+        "tasks": [
+          { "id": "t1", "label": "Acquire global ocean surface radar topography", "target": "radar-sounder" },
+          { "id": "t2", "label": "Downlink high-bandwidth oceanographic data", "target": "kaband-phased-array" },
+          { "id": "t3", "label": "Buffer power during 36-minute eclipse passes", "target": "dual-lithium-battery" }
+        ],
+        "constraints": {
+          "max_mass": 75,
+          "max_power": 90,
+          "max_budget": 70,
+          "min_comms": 50,
+          "duration": 36
+        },
+        "initial_resources": {
+          "budget": 70,
+          "mass": 22,
+          "power": 60,
+          "scientific_value": 20,
+          "communication": 55,
+          "time": 36
+        }
+      },
+      {
+        "id": "earth-m3",
+        "number": 3,
+        "title": "Greenhouse Gas & Methane Plume Lidar",
+        "description": "Deploy hyperspectral spectrometer to identify point-source methane leaks from industrial facilities and natural wetlands.",
+        "difficulty": "Hard",
+        "required_orbit": "SSO",
+        "tasks": [
+          { "id": "t1", "label": "Isolate atmospheric methane absorption bands", "target": "hyperspectral-imager" },
+          { "id": "t2", "label": "Direct optical downlink to international weather hubs", "target": "laser-optical-relay" },
+          { "id": "t3", "label": "Provide 100W peak power for spectrometer cryocooler", "target": "deployable-solar-wings" }
+        ],
+        "constraints": {
+          "max_mass": 85,
+          "max_power": 105,
+          "max_budget": 80,
+          "min_comms": 65,
+          "duration": 48
+        },
+        "initial_resources": {
+          "budget": 65,
+          "mass": 28,
+          "power": 65,
+          "scientific_value": 25,
+          "communication": 50,
+          "time": 48
+        }
+      },
+      {
+        "id": "earth-m4",
+        "number": 4,
+        "title": "Disaster Rapid Response Constellation",
+        "description": "Deploy a compact CubeSat bus equipped with optical stereo imaging to transmit real-time wildfire and flood imagery to first responders.",
+        "difficulty": "Advanced",
+        "required_orbit": "LEO",
+        "tasks": [
+          { "id": "t1", "label": "Lightweight bus for rapid launcher deployment", "target": "electron-rocket" },
+          { "id": "t2", "label": "Rapid stereo mapping of emergency disaster zones", "target": "stereo-camera" },
+          { "id": "t3", "label": "Low-latency emergency transmission via omni link", "target": "omni-sband" }
+        ],
+        "constraints": {
+          "max_mass": 45,
+          "max_power": 65,
+          "max_budget": 50,
+          "min_comms": 45,
+          "duration": 24
+        },
+        "initial_resources": {
+          "budget": 80,
+          "mass": 15,
+          "power": 70,
+          "scientific_value": 22,
+          "communication": 60,
+          "time": 24
+        }
+      },
+      {
+        "id": "earth-m5",
+        "number": 5,
+        "title": "Global Biosphere Sentinel",
+        "description": "Continuous multi-spectral monitoring of rainforest deforestation, agricultural crop yields, and ocean phytoplankton blooms.",
+        "difficulty": "Master",
+        "required_orbit": "SSO",
+        "tasks": [
+          { "id": "t1", "label": "Full terrestrial vegetation index coverage", "target": "hyperspectral-imager" },
+          { "id": "t2", "label": "High-speed Ka-band downlink to ground network", "target": "kaband-phased-array" },
+          { "id": "t3", "label": "Design for 5-year extended orbital lifespan", "target": "time" }
+        ],
+        "constraints": {
+          "max_mass": 95,
+          "max_power": 115,
+          "max_budget": 90,
+          "min_comms": 75,
+          "duration": 60
+        },
+        "initial_resources": {
+          "budget": 60,
+          "mass": 30,
+          "power": 70,
+          "scientific_value": 30,
+          "communication": 65,
+          "time": 60
+        }
+      }
+    ]
+  }
+]

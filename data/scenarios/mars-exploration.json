@@ -1,0 +1,418 @@
+{
+  "game_title": "Commanders of the Cosmos: Mars Exploration Odyssey",
+  "version": "1.0.0",
+  "start_question_id": "MQ001",
+  "initial_resources": {
+    "budget": 65,
+    "mass": 25,
+    "power": 60,
+    "scientific_value": 15,
+    "communication": 50
+  },
+  "resource_bounds": {
+    "min": 0,
+    "max": 100
+  },
+  "questions": [
+    {
+      "id": "MQ001",
+      "stage": "mission_planning",
+      "story": "Welcome to the Mars Flight Control Center, Commander! Your robotic probe has separated from its interplanetary transfer stage and is coasting toward Mars at 21,000 km/h.",
+      "question": "Which orbital insertion strategy will you command?",
+      "source": {
+        "title": "NASA Mars Reconnaissance Orbiter Aerobraking Campaign",
+        "url": "https://mars.nasa.gov/mro/mission/timeline/aerobraking/",
+        "section": "Orbital Insertion & Aerobraking"
+      },
+      "answers": [
+        {
+          "id": "MA001",
+          "text": "Perform a gradual aerobraking campaign using upper atmospheric drag.",
+          "next_question_id": "MQ002",
+          "ending_id": null,
+          "consequence_summary": "Saves 600 kg of heavy retro-rocket propellant, though high temperatures test thermal tile limits.",
+          "effects": {
+            "budget": -5,
+            "mass": -10,
+            "power": 5,
+            "scientific_value": 15,
+            "communication": 5
+          },
+          "learning_point": "Aerobraking converts kinetic energy into heat by grazing the atmosphere over hundreds of orbits, saving massive amounts of rocket fuel."
+        },
+        {
+          "id": "MA002",
+          "text": "Execute a high-thrust bipropellant rocket burn for immediate orbit capture.",
+          "next_question_id": "MQ003",
+          "ending_id": null,
+          "consequence_summary": "Puts your spacecraft into science orbit instantly, but burns through huge amounts of fuel mass and budget.",
+          "effects": {
+            "budget": -18,
+            "mass": 15,
+            "power": 0,
+            "scientific_value": 10,
+            "communication": 0
+          },
+          "learning_point": "Direct propulsive burns require carrying heavy chemical fuel, which increases the launch rocket class needed."
+        }
+      ]
+    },
+    {
+      "id": "MQ002",
+      "stage": "spacecraft_design",
+      "story": "During aerobraking, orbital friction heats your leading solar array edges. You must maintain electrical generation while protecting delicate solar cells.",
+      "question": "How will you adjust the solar wing orientation during atmospheric passes?",
+      "source": {
+        "title": "NASA Mars Odyssey Mission Aerobraking Architecture",
+        "url": "https://mars.nasa.gov/odyssey/",
+        "section": "Thermal Protection & Attitude Control"
+      },
+      "answers": [
+        {
+          "id": "MA003",
+          "text": "Feather the arrays edge-on to the wind to minimize friction drag and heat.",
+          "next_question_id": "MQ004",
+          "ending_id": null,
+          "consequence_summary": "Reduces aerodynamic stress and protects panels, settling safely into low science orbit.",
+          "effects": {
+            "budget": -5,
+            "mass": 0,
+            "power": 10,
+            "scientific_value": 10,
+            "communication": 5
+          },
+          "learning_point": "Feathering solar panels reduces surface area exposed to supersonic gas drag, preventing structural bending."
+        },
+        {
+          "id": "MA004",
+          "text": "Keep arrays flat to brake faster, counting on internal radiative cooling.",
+          "next_question_id": null,
+          "ending_id": "ME008",
+          "consequence_summary": "Extreme aerodynamic torque snaps a solar panel mounting hinge during an atmospheric dip!",
+          "effects": {
+            "budget": 0,
+            "mass": -10,
+            "power": -45,
+            "scientific_value": -10,
+            "communication": -25
+          },
+          "learning_point": "Exceeding aerodynamic pressure limits during aerobraking causes structural failure."
+        }
+      ]
+    },
+    {
+      "id": "MQ003",
+      "stage": "spacecraft_design",
+      "story": "Your direct chemical burn was successful, placing your heavy orbiter into an elliptical Mars orbit. However, your propellant tanks are 80% depleted.",
+      "question": "How will you prioritize the remaining station-keeping fuel?",
+      "source": {
+        "title": "NASA MAVEN Mission Operations",
+        "url": "https://lasp.colorado.edu/maven/",
+        "section": "Orbital Maintenance"
+      },
+      "answers": [
+        {
+          "id": "MA005",
+          "text": "Remain in the high stable orbit to preserve reaction control fuel for 5 years.",
+          "next_question_id": "MQ005",
+          "ending_id": null,
+          "consequence_summary": "Safe fuel reserves ensure a long mission lifetime and excellent broad weather monitoring.",
+          "effects": {
+            "budget": 0,
+            "mass": 0,
+            "power": 10,
+            "scientific_value": 12,
+            "communication": 15
+          },
+          "learning_point": "High orbital altitudes experience virtually zero atmospheric drag, requiring minimal station-keeping fuel."
+        },
+        {
+          "id": "MA006",
+          "text": "Burn your remaining fuel to drop into a low 200 km mapping orbit.",
+          "next_question_id": "MQ006",
+          "ending_id": null,
+          "consequence_summary": "Provides stunning high-resolution radar and camera images, but leaves zero fuel margin for emergency maneuvers.",
+          "effects": {
+            "budget": -8,
+            "mass": -5,
+            "power": -5,
+            "scientific_value": 24,
+            "communication": 0
+          },
+          "learning_point": "Low orbits provide sharper imaging data but require active drag compensation."
+        }
+      ]
+    },
+    {
+      "id": "MQ004",
+      "stage": "scientific_instruments",
+      "story": "With aerobraking complete, your low circular orbit allows close observation. The science team wants to locate subsurface water ice.",
+      "question": "Which payload instrument will you activate as primary sensor?",
+      "source": {
+        "title": "NASA Mars Reconnaissance Orbiter Shallow Radar (SHARAD)",
+        "url": "https://mars.nasa.gov/mro/mission/instruments/sharad/",
+        "section": "Radar Sounding of Mars Subsurface"
+      },
+      "answers": [
+        {
+          "id": "MA007",
+          "text": "Synthetic Aperture Ground-Penetrating Radar Sounder.",
+          "next_question_id": "MQ007",
+          "ending_id": null,
+          "consequence_summary": "Bounces radio pulses through regolith, detecting buried ice sheets under Utopia Planitia!",
+          "effects": {
+            "budget": -10,
+            "mass": 5,
+            "power": -15,
+            "scientific_value": 26,
+            "communication": -10
+          },
+          "learning_point": "Radar sounders reveal underground geology and ice reservoirs hidden beneath dust and rock."
+        },
+        {
+          "id": "MA008",
+          "text": "Hyperspectral Near-Infrared Mineral Imager.",
+          "next_question_id": "MQ008",
+          "ending_id": null,
+          "consequence_summary": "Maps clay minerals and hydrated sulfates, charting where ancient rivers and lakes once pooled.",
+          "effects": {
+            "budget": -8,
+            "mass": 4,
+            "power": -10,
+            "scientific_value": 22,
+            "communication": 0
+          },
+          "learning_point": "Spectrometers identify surface minerals by measuring the specific absorption wavelengths of reflected sunlight."
+        }
+      ]
+    },
+    {
+      "id": "MQ005",
+      "stage": "space_communications",
+      "story": "From your high stable orbit, your spacecraft serves as an ideal telecommunications relay between Mars surface rovers and Earth.",
+      "question": "How will you configure the orbiter's relay transponders?",
+      "source": {
+        "title": "NASA Mars Relay Operations Service (MaROS)",
+        "url": "https://deepspace.jpl.nasa.gov/",
+        "section": "Interplanetary Telecommunications Relay"
+      },
+      "answers": [
+        {
+          "id": "MA009",
+          "text": "Dedicate high-power UHF transceivers to relay rover data to Deep Space Network.",
+          "next_question_id": null,
+          "ending_id": "ME002",
+          "consequence_summary": "Your orbiter relays gigabytes of rover discoveries back to Earth, proving essential to the Mars program!",
+          "effects": {
+            "budget": 5,
+            "mass": 0,
+            "power": -5,
+            "scientific_value": 20,
+            "communication": 30
+          },
+          "learning_point": "Orbiters serve as relay nodes because their high-gain dishes can transmit data to Earth much faster than a surface rover."
+        },
+        {
+          "id": "MA010",
+          "text": "Keep relays in low-power mode and prioritize the orbiter's own weather camera.",
+          "next_question_id": null,
+          "ending_id": "ME004",
+          "consequence_summary": "Generates steady regional weather maps, though surface teams miss key data transfer windows.",
+          "effects": {
+            "budget": 5,
+            "mass": 0,
+            "power": 15,
+            "scientific_value": 14,
+            "communication": 5
+          },
+          "learning_point": "Balancing your own science with relay responsibilities is a common challenge for Mars orbiters."
+        }
+      ]
+    },
+    {
+      "id": "MQ006",
+      "stage": "mission_operations",
+      "story": "Low Mars orbit brings you within 200 km of the surface, but Martian atmospheric density fluctuates wildly during seasons.",
+      "question": "How will you protect the spacecraft from unexpected atmospheric density spikes?",
+      "source": {
+        "title": "NASA Mars Climate Orbiter Mishap Investigation",
+        "url": "https://www.nasa.gov/",
+        "section": "Navigation & Atmospheric Margins"
+      },
+      "answers": [
+        {
+          "id": "MA011",
+          "text": "Program autonomous safe-mode orbit boosts using momentum wheel desaturation.",
+          "next_question_id": null,
+          "ending_id": "ME001",
+          "consequence_summary": "Smart autonomous flight controls keep the spacecraft clear of thick air while capturing ultra-sharp radar maps!",
+          "effects": {
+            "budget": -5,
+            "mass": 0,
+            "power": 5,
+            "scientific_value": 25,
+            "communication": 15
+          },
+          "learning_point": "Autonomous attitude control systems compensate for atmospheric fluctuations faster than commands sent across 20-minute signal delays."
+        },
+        {
+          "id": "MA012",
+          "text": "Rely solely on Earth ground controllers to send manual trajectory trims.",
+          "next_question_id": null,
+          "ending_id": "ME005",
+          "consequence_summary": "The 20-minute radio signal lag to Earth prevents timely correction, forcing an emergency altitude raise that ends early.",
+          "effects": {
+            "budget": -10,
+            "mass": 0,
+            "power": -15,
+            "scientific_value": 10,
+            "communication": -10
+          },
+          "learning_point": "Radio signals take between 4 and 24 minutes to travel from Mars to Earth, making real-time manual piloting impossible."
+        }
+      ]
+    },
+    {
+      "id": "MQ007",
+      "stage": "space_communications",
+      "story": "Your ground-penetrating radar has generated massive 3D data cubes of subsurface glaciers. Earth is currently 220 million kilometers away.",
+      "question": "Which communication subsystem will you utilize to transmit the radar maps?",
+      "source": {
+        "title": "NASA Deep Space Network Ka-Band Planetary Downlink",
+        "url": "https://deepspace.jpl.nasa.gov/",
+        "section": "Deep Space Telecommunications"
+      },
+      "answers": [
+        {
+          "id": "MA013",
+          "text": "32 GHz Ka-band phased array pointed at Goldstone and Madrid DSN dishes.",
+          "next_question_id": null,
+          "ending_id": "ME001",
+          "consequence_summary": "High-frequency Ka-band beams down the entire 3D ice map in pristine detail, making headlines worldwide!",
+          "effects": {
+            "budget": -8,
+            "mass": 0,
+            "power": -10,
+            "scientific_value": 25,
+            "communication": 25
+          },
+          "learning_point": "Ka-band frequencies offer four times higher data bandwidth than legacy X-band radio systems."
+        },
+        {
+          "id": "MA014",
+          "text": "Low-frequency X-band antenna with aggressive lossy image compression.",
+          "next_question_id": null,
+          "ending_id": "ME003",
+          "consequence_summary": "Conserves onboard electrical power, though some fine glacial boundary details are lost in compression.",
+          "effects": {
+            "budget": 5,
+            "mass": 0,
+            "power": 10,
+            "scientific_value": 16,
+            "communication": 10
+          },
+          "learning_point": "Data compression reduces radio power demands at the cost of scientific resolution."
+        }
+      ]
+    },
+    {
+      "id": "MQ008",
+      "stage": "mission_operations",
+      "story": "A planet-encircling dust storm sweeps across the Southern hemisphere, blotting out surface features for the next two months.",
+      "question": "How will your mission team adapt to the global dust storm?",
+      "source": {
+        "title": "NASA Mars Global Dust Storm Observations",
+        "url": "https://mars.nasa.gov/",
+        "section": "Planetary Atmosphere Dynamics"
+      },
+      "answers": [
+        {
+          "id": "MA015",
+          "text": "Re-tune infrared sensors to track dust cloud altitudes and thermal heating.",
+          "next_question_id": null,
+          "ending_id": "ME001",
+          "consequence_summary": "Turns an environmental hazard into a landmark scientific study of how global dust storms alter Martian climate!",
+          "effects": {
+            "budget": 0,
+            "mass": 0,
+            "power": 5,
+            "scientific_value": 24,
+            "communication": 15
+          },
+          "learning_point": "Infrared instruments can see through dust clouds that block visible light, revealing temperature structures."
+        },
+        {
+          "id": "MA016",
+          "text": "Put science payload into hibernation and wait for clear skies.",
+          "next_question_id": null,
+          "ending_id": "ME002",
+          "consequence_summary": "Protects spacecraft hardware safely, completing primary mapping after dust settles.",
+          "effects": {
+            "budget": 0,
+            "mass": 0,
+            "power": 15,
+            "scientific_value": 12,
+            "communication": 10
+          },
+          "learning_point": "Safe-mode hibernation reduces thermal and electrical strain when environmental conditions degrade."
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "ME001",
+      "title": "Landmark Martian Discovery",
+      "status": "outstanding_success",
+      "final_score_formula": "scientific_value * 1.5 + communication + power + budget",
+      "description": "Exemplary mission execution! Your spacecraft successfully balanced aerobraking drag, solar power at Mars distance, and high-frequency Ka-band communications to map subsurface glacial water ice across Utopia Planitia.",
+      "scientific_explanation": "By pairing radar sounding with autonomous orbital attitude stabilization and Ka-band downlink, your spacecraft returned unprecedented geological datasets without exceeding budget.",
+      "learning_point": "Interplanetary missions succeed when orbital mechanics, thermal management, and autonomous systems operate in seamless concert."
+    },
+    {
+      "id": "ME002",
+      "title": "Reliable Long-Term Mars Workhorse",
+      "status": "efficient_success",
+      "final_score_formula": "budget * 1.3 + power * 1.2 + scientific_value + communication",
+      "description": "Mission accomplished! Your conservative operational choices preserved battery life and fuel margins, allowing your spacecraft to serve as a vital communications relay and regional climate monitor for years.",
+      "scientific_explanation": "Choosing stable orbital altitudes and smart power hibernation protected critical spacecraft subsystems across harsh Martian seasons.",
+      "learning_point": "Reliable orbiters provide the foundational communications infrastructure enabling surface rover missions to succeed."
+    },
+    {
+      "id": "ME003",
+      "title": "Valuable Mars Geological Science",
+      "status": "scientific_discovery",
+      "final_score_formula": "scientific_value * 1.4 + communication + power",
+      "description": "Solid science return! Your spacecraft mapped ancient lakebed clay minerals and tracked atmospheric escape, providing essential clues about whether Mars once harbored life.",
+      "scientific_explanation": "Targeted spectrometer choices returned valuable mineral spectra despite bandwidth limitations during solar conjunction.",
+      "learning_point": "Spectroscopic measurements from orbit establish the chemical timeline of water and climate change on terrestrial planets."
+    },
+    {
+      "id": "ME004",
+      "title": "Partial Mission Return",
+      "status": "partial_success",
+      "final_score_formula": "scientific_value + communication + budget",
+      "description": "Mission completed with moderate scientific yield. Your orbiter remained healthy, but limited relay time and power constraints prevented returning full-resolution datasets.",
+      "scientific_explanation": "Conservative downlink schedules left high-volume raw radar and stereo image cubes stored in onboard memory.",
+      "learning_point": "Downlink bandwidth to Earth is a critical bottleneck for deep-space missions hundreds of millions of kilometers away."
+    },
+    {
+      "id": "ME005",
+      "title": "Orbital Emergency Safe Mode",
+      "status": "strategy_revision",
+      "final_score_formula": "scientific_value + power + budget * 0.8",
+      "description": "Emergency thruster burn executed! Due to radio delay from Earth, your orbiter dipped too deep into the atmosphere before safe software initiated an emergency orbit-raising burn.",
+      "scientific_explanation": "Light travel time to Mars prevented timely manual intervention, consuming remaining fuel reserves.",
+      "learning_point": "Deep-space robotic spacecraft require onboard autonomous fault detection to handle sudden dynamic hazards."
+    },
+    {
+      "id": "ME008",
+      "title": "Structural Failure in Aerobraking",
+      "status": "engineering_failure",
+      "final_score_formula": "budget * 0.5",
+      "description": "Telemetry lost during periapsis pass! Excessive aerodynamic drag torque damaged solar wing mountings, cutting off electrical power.",
+      "scientific_explanation": "Aerodynamic forces in thin upper atmospheres scale exponentially with velocity; unfeathered structures cannot withstand high supersonic dynamic pressures.",
+      "learning_point": "Never compromise structural orientation and safety margins during atmospheric entry and aerobraking maneuvers."
+    }
+  ]
+}

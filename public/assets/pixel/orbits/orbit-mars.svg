@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <circle cx="32" cy="32" r="14" fill="#F81414"/>
+    <!-- Mars Low Science Orbit -->
+    <ellipse cx="32" cy="32" rx="24" ry="14" stroke="#FF9A1F" stroke-width="3" fill="none" stroke-dasharray="4,2"/>
+    <rect x="46" y="22" width="6" height="6" fill="#EEF1F8"/>
+  
+</svg>

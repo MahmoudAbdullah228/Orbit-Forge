@@ -1,0 +1,95 @@
+[
+  {
+    "id": "electron-rocket",
+    "name": "Electron (Rocket Lab)",
+    "category": "light",
+    "description": "Two-stage small-lift launch vehicle with 3D-printed Rutherford engines and carbon composite fairings. Cost-effective for lightweight CubeSats and nanosatellites.",
+    "real": {
+      "verified": true,
+      "source": "https://www.rocketlabusa.com/launch/electron/",
+      "source_name": "Rocket Lab Electron Payload User's Guide",
+      "height_m": 18,
+      "payload_leo_kg": 300,
+      "payload_tli_kg": 30,
+      "estimated_cost_usd_m": 7.5
+    },
+    "game": {
+      "cost": 15,
+      "max_payload_kg": 40,
+      "max_volume_m3": 1.2,
+      "reliability": 92,
+      "compatible_orbits": ["LEO", "SSO"]
+    },
+    "image": "/assets/realistic/vehicles/rocket-light.png"
+  },
+  {
+    "id": "falcon-9",
+    "name": "Falcon 9 (SpaceX)",
+    "category": "medium",
+    "description": "Reusable two-stage medium-to-heavy lift rocket powered by 9 Merlin engines. Workhorse for NASA Commercial Resupply, robotic lunar orbiters, and deep-space rideshares.",
+    "real": {
+      "verified": true,
+      "source": "https://www.spacex.com/vehicles/falcon-9/",
+      "source_name": "SpaceX Falcon 9 User's Guide",
+      "height_m": 70,
+      "payload_leo_kg": 22800,
+      "payload_tli_kg": 4020,
+      "payload_tmi_kg": 4020,
+      "estimated_cost_usd_m": 67.0
+    },
+    "game": {
+      "cost": 30,
+      "max_payload_kg": 85,
+      "max_volume_m3": 4.5,
+      "reliability": 98,
+      "compatible_orbits": ["LEO", "SSO", "GEO", "LUNAR_POLAR", "LUNAR_EQUATORIAL", "MARS_TRANSFER"]
+    },
+    "image": "/assets/realistic/vehicles/rocket-medium.png"
+  },
+  {
+    "id": "atlas-v",
+    "name": "Atlas V 551 (ULA)",
+    "category": "heavy",
+    "description": "Evolved Expendable Launch Vehicle configured with 5 solid rocket boosters and a Centaur upper stage. Launched NASA's New Horizons to Pluto, Curiosity and Perseverance to Mars.",
+    "real": {
+      "verified": true,
+      "source": "https://www.ulalaunch.com/rockets/atlas-v",
+      "source_name": "United Launch Alliance Atlas V Planner's Guide",
+      "height_m": 58,
+      "payload_leo_kg": 18850,
+      "payload_tmi_kg": 3800,
+      "estimated_cost_usd_m": 120.0
+    },
+    "game": {
+      "cost": 45,
+      "max_payload_kg": 110,
+      "max_volume_m3": 6.0,
+      "reliability": 99,
+      "compatible_orbits": ["LEO", "SSO", "GEO", "LUNAR_POLAR", "MARS_TRANSFER", "MARS_LOW_ORBIT"]
+    },
+    "image": "/assets/realistic/vehicles/rocket-heavy.png"
+  },
+  {
+    "id": "sls-block1",
+    "name": "SLS Block 1 (NASA)",
+    "category": "super-heavy",
+    "description": "NASA's Space Launch System designed for deep-space human and planetary science missions, featuring 4 RS-25 cryogenic engines and two 5-segment solid rocket boosters.",
+    "real": {
+      "verified": true,
+      "source": "https://www.nasa.gov/reference/space-launch-system-reference-guide/",
+      "source_name": "NASA Space Launch System Reference Guide",
+      "height_m": 98,
+      "payload_leo_kg": 95000,
+      "payload_tli_kg": 27000,
+      "estimated_cost_usd_m": 800.0
+    },
+    "game": {
+      "cost": 60,
+      "max_payload_kg": 160,
+      "max_volume_m3": 12.0,
+      "reliability": 97,
+      "compatible_orbits": ["LUNAR_POLAR", "LUNAR_EQUATORIAL", "MARS_TRANSFER", "MARS_LOW_ORBIT", "GEO"]
+    },
+    "image": "/assets/realistic/vehicles/rocket-super.png"
+  }
+]

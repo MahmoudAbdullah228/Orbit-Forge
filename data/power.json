@@ -1,0 +1,90 @@
+[
+  {
+    "id": "compact-solar-array",
+    "name": "Body-Mounted Solar Panels",
+    "category": "solar",
+    "description": "Multi-junction gallium arsenide (GaAs) solar cells bonded directly to the satellite structural panels. Lightweight with zero deployment mechanism risks.",
+    "real": {
+      "verified": true,
+      "source": "https://www.nasa.gov/smallsat-institute/space-power-systems/",
+      "source_name": "NASA Small Spacecraft Technology State of the Art: Power",
+      "efficiency": "29.5%",
+      "mass_kg": 6.5,
+      "power_1au_watts": 85.0
+    },
+    "game": {
+      "mass": 6,
+      "power_generation": 25,
+      "cost": 8,
+      "eclipse_sensitive": true,
+      "distance_factor": true
+    },
+    "image": "/assets/realistic/power/solar-compact.png"
+  },
+  {
+    "id": "deployable-solar-wings",
+    "name": "Deployable UltraFlex Solar Wings",
+    "category": "solar",
+    "description": "Fan-fold ultra-lightweight accordion solar arrays that unfold automatically after orbit insertion. Produces substantial power even at Mars's distance.",
+    "real": {
+      "verified": true,
+      "source": "https://www.nasa.gov/mission_pages/station/research/experiments/explorer/Investigation.html?#id=7410",
+      "source_name": "NASA ROSA (Roll-Out Solar Array) & UltraFlex flight data",
+      "efficiency": "32%",
+      "mass_kg": 24.0,
+      "power_1au_watts": 1200.0
+    },
+    "game": {
+      "mass": 14,
+      "power_generation": 60,
+      "cost": 18,
+      "eclipse_sensitive": true,
+      "distance_factor": true
+    },
+    "image": "/assets/realistic/power/solar-wings.png"
+  },
+  {
+    "id": "dual-lithium-battery",
+    "name": "High-Capacity Li-Ion Battery Pack",
+    "category": "battery",
+    "description": "Space-qualified lithium-ion cells with integrated thermal heater loops and battery management system (BMS) to supply power during orbital eclipses.",
+    "real": {
+      "verified": true,
+      "source": "https://www.nasa.gov/smallsat-institute/space-power-systems/",
+      "source_name": "NASA Energy Storage Systems for Small Spacecraft",
+      "specific_energy_wh_kg": 150,
+      "mass_kg": 18.0,
+      "capacity_watt_hours": 1200
+    },
+    "game": {
+      "mass": 12,
+      "power_generation": 35,
+      "cost": 12,
+      "eclipse_sensitive": false,
+      "distance_factor": false
+    },
+    "image": "/assets/realistic/power/battery-pack.png"
+  },
+  {
+    "id": "mmrtg-nuclear",
+    "name": "Multi-Mission Radioisotope Generator (MMRTG)",
+    "category": "nuclear",
+    "description": "Converts heat from the natural radioactive decay of Plutonium-238 into continuous day-and-night electrical power. Completely immune to dust storms and eclipses.",
+    "real": {
+      "verified": true,
+      "source": "https://mars.nasa.gov/mars2020/spacecraft/rover/power/",
+      "source_name": "NASA Mars 2020 Perseverance Power Subsystem",
+      "mass_kg": 45.0,
+      "power_output_watts": 110.0,
+      "lifetime_years": 14
+    },
+    "game": {
+      "mass": 22,
+      "power_generation": 75,
+      "cost": 32,
+      "eclipse_sensitive": false,
+      "distance_factor": false
+    },
+    "image": "/assets/realistic/power/rtg.png"
+  }
+]

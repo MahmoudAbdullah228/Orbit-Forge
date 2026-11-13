@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <rect x="14" y="16" width="36" height="32" fill="#1A0F3A"/>
+    <rect x="12" y="14" width="40" height="36" fill="none" stroke="#6B4FD8" stroke-width="4"/>
+    <!-- Phased antenna elements grid -->
+    <circle cx="22" cy="24" r="3" fill="#2EE6A8"/>
+    <circle cx="32" cy="24" r="3" fill="#2EE6A8"/>
+    <circle cx="42" cy="24" r="3" fill="#2EE6A8"/>
+    <circle cx="22" cy="34" r="3" fill="#2EE6A8"/>
+    <circle cx="32" cy="34" r="3" fill="#2EE6A8"/>
+    <circle cx="42" cy="34" r="3" fill="#2EE6A8"/>
+  
+</svg>

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "omni-sband",
+    "name": "Low-Gain Omni Antenna (S-Band)",
+    "category": "omni",
+    "description": "Broad spherical radiation pattern ensuring emergency command and beacon telemetry from any spacecraft attitude without requiring pointing toward Earth.",
+    "real": {
+      "verified": true,
+      "source": "https://www.nasa.gov/smallsat-institute/space-communications-and-navigation/",
+      "source_name": "NASA Small Spacecraft Communications State of the Art",
+      "frequency_ghz": 2.2,
+      "data_rate_kbps": 32.0,
+      "mass_kg": 1.2,
+      "power_watts": 8.0
+    },
+    "game": {
+      "mass": 3,
+      "power": 5,
+      "cost": 5,
+      "downlink_capacity": 20,
+      "reliability": 99,
+      "pointing_required": false
+    },
+    "image": "/assets/realistic/comms/antenna-omni.png"
+  },
+  {
+    "id": "xband-dish",
+    "name": "Steerable High-Gain Dish (X-Band)",
+    "category": "directional",
+    "description": "Gimballed 1.2-meter parabolic reflector dish providing focused megabit downlink speeds directly to NASA's Deep Space Network 34-meter antennas.",
+    "real": {
+      "verified": true,
+      "source": "https://deepspace.jpl.nasa.gov/about/technology/",
+      "source_name": "NASA Deep Space Network Technical Architecture",
+      "frequency_ghz": 8.4,
+      "data_rate_mbps": 4.5,
+      "mass_kg": 14.5,
+      "power_watts": 35.0
+    },
+    "game": {
+      "mass": 8,
+      "power": 12,
+      "cost": 14,
+      "downlink_capacity": 60,
+      "reliability": 95,
+      "pointing_required": true
+    },
+    "image": "/assets/realistic/comms/dish-xband.png"
+  },
+  {
+    "id": "kaband-phased-array",
+    "name": "Ka-Band Phased Array Transceiver",
+    "category": "phased-array",
+    "description": "Electronic beam steering without mechanical gimbals. Provides ultra-high throughput downlink for gigabyte-scale radar and high-resolution planetary imaging.",
+    "real": {
+      "verified": true,
+      "source": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/deep-space-network/",
+      "source_name": "NASA Space Communications and Navigation (SCaN) Ka-Band Transition",
+      "frequency_ghz": 32.0,
+      "data_rate_mbps": 150.0,
+      "mass_kg": 18.0,
+      "power_watts": 55.0
+    },
+    "game": {
+      "mass": 12,
+      "power": 22,
+      "cost": 25,
+      "downlink_capacity": 95,
+      "reliability": 96,
+      "pointing_required": true
+    },
+    "image": "/assets/realistic/comms/phased-array.png"
+  },
+  {
+    "id": "laser-optical-relay",
+    "name": "Deep Space Optical Communications (DSOC)",
+    "category": "optical",
+    "description": "Infrared laser communications system encoding data into photon pulses, demonstrating unprecedented data rates (up to 267 Mbps) from deep space.",
+    "real": {
+      "verified": true,
+      "source": "https://www.jpl.nasa.gov/missions/deep-space-optical-communications-dsoc",
+      "source_name": "NASA JPL Deep Space Optical Communications (DSOC) Project",
+      "laser_wavelength_nm": 1550,
+      "data_rate_mbps": 267.0,
+      "mass_kg": 29.0,
+      "power_watts": 80.0
+    },
+    "game": {
+      "mass": 16,
+      "power": 28,
+      "cost": 34,
+      "downlink_capacity": 120,
+      "reliability": 94,
+      "pointing_required": true
+    },
+    "image": "/assets/realistic/comms/optical-relay.png"
+  }
+]

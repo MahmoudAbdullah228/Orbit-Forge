@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <rect x="16" y="16" width="32" height="32" fill="#7C869C"/>
+    <rect x="14" y="14" width="36" height="36" fill="none" stroke="#B9C2D6" stroke-width="4"/>
+    <!-- Laser Emitter Emitter -->
+    <rect x="26" y="26" width="12" height="12" fill="#A80C0C"/>
+    <rect x="28" y="28" width="8" height="8" fill="#F81414"/>
+    <!-- Laser Beam Pulse -->
+    <rect x="30" y="44" width="4" height="16" fill="#F81414"/>
+    <rect x="31" y="44" width="2" height="16" fill="#FFE45C"/>
+  
+</svg>

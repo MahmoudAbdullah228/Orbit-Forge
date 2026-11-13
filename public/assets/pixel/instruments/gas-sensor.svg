@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <rect x="16" y="16" width="32" height="32" fill="#1A0F3A"/>
+    <rect x="14" y="14" width="36" height="36" fill="none" stroke="#6B4FD8" stroke-width="4"/>
+    <!-- Ion funnel / spectrometer chamber -->
+    <polygon points="20,20 44,20 36,36 28,36" fill="#2EE6A8"/>
+    <rect x="30" y="36" width="4" height="12" fill="#FFB23E"/>
+    <circle cx="32" cy="26" r="3" fill="#EEF1F8"/>
+  
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <!-- Sleek black/silver Electron style -->
+    <rect x="28" y="8" width="8" height="8" fill="#EEF1F8"/>
+    <rect x="30" y="4" width="4" height="4" fill="#EEF1F8"/>
+    <rect x="28" y="16" width="8" height="32" fill="#120A3D"/>
+    <rect x="26" y="44" width="12" height="6" fill="#B9C2D6"/>
+    <!-- Fins -->
+    <rect x="22" y="42" width="6" height="8" fill="#120A3D"/>
+    <rect x="36" y="42" width="6" height="8" fill="#120A3D"/>
+    <!-- Exhaust flame -->
+    <rect x="30" y="50" width="4" height="10" fill="#FFE45C"/>
+    <rect x="31" y="52" width="2" height="6" fill="#EEF1F8"/>
+  
+</svg>

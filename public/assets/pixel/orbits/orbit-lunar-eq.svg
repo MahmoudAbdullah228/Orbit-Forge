@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="#0A0626"/>
+    <circle cx="32" cy="32" r="14" fill="#B9C2D6"/>
+    <!-- Equatorial track -->
+    <ellipse cx="32" cy="32" rx="28" ry="10" stroke="#3DF08A" stroke-width="3" fill="none" stroke-dasharray="4,2"/>
+    <rect x="50" y="26" width="6" height="6" fill="#EEF1F8"/>
+  
+</svg>

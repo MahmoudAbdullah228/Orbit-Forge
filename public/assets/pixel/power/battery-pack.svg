@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <rect x="16" y="18" width="32" height="32" fill="#7C869C"/>
+    <rect x="14" y="16" width="36" height="36" fill="none" stroke="#B9C2D6" stroke-width="4"/>
+    <!-- Terminal caps -->
+    <rect x="22" y="10" width="6" height="6" fill="#F81414"/>
+    <rect x="36" y="10" width="6" height="6" fill="#120A3D"/>
+    <!-- Charge bolt -->
+    <polygon points="34,22 26,34 32,34 30,44 40,30 34,30" fill="#FFE45C"/>
+  
+</svg>

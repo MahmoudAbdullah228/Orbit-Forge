@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <rect x="12" y="16" width="40" height="32" fill="#12A8E8"/>
+    <rect x="10" y="14" width="44" height="36" fill="none" stroke="#B9C2D6" stroke-width="4"/>
+    <!-- Solar grid lines -->
+    <rect x="12" y="26" width="40" height="2" fill="#B9C2D6"/>
+    <rect x="12" y="36" width="40" height="2" fill="#B9C2D6"/>
+    <rect x="24" y="16" width="2" height="32" fill="#B9C2D6"/>
+    <rect x="38" y="16" width="2" height="32" fill="#B9C2D6"/>
+  
+</svg>

@@ -1,0 +1,117 @@
+[
+  {
+    "id": "LEO",
+    "name": "Low Earth Orbit (LEO)",
+    "destination": "earth",
+    "altitude_km": 400,
+    "inclination_deg": 51.6,
+    "description": "Circular orbit around Earth at 400 km altitude with 90-minute orbital period (45 minutes sunlight, 45 minutes eclipse). Low delta-V, low communications latency.",
+    "real": {
+      "verified": true,
+      "source": "https://software.nasa.gov/software/GSC-17177-1",
+      "source_name": "NASA General Mission Analysis Tool (GMAT) Orbital Catalog",
+      "delta_v_ms": 9400,
+      "eclipse_duration_min": 36
+    },
+    "game": {
+      "difficulty": "Easy",
+      "mass_penalty": 0,
+      "delta_v_cost": 10,
+      "science_multiplier": 1.0,
+      "eclipse_factor": 0.4
+    },
+    "image": "/assets/realistic/orbits/orbit-leo.png"
+  },
+  {
+    "id": "SSO",
+    "name": "Sun-Synchronous Orbit (SSO)",
+    "destination": "earth",
+    "altitude_km": 700,
+    "inclination_deg": 98.2,
+    "description": "Retrograde polar orbit where the orbital plane precesses at the exact same rate the Earth orbits the Sun, ensuring consistent surface lighting and near-continuous solar power.",
+    "real": {
+      "verified": true,
+      "source": "https://earthobservatory.nasa.gov/features/OrbitsCatalog",
+      "source_name": "NASA Earth Observatory Orbit Catalog",
+      "delta_v_ms": 9800,
+      "eclipse_duration_min": 15
+    },
+    "game": {
+      "difficulty": "Medium",
+      "mass_penalty": 5,
+      "delta_v_cost": 15,
+      "science_multiplier": 1.25,
+      "eclipse_factor": 0.15
+    },
+    "image": "/assets/realistic/orbits/orbit-sso.png"
+  },
+  {
+    "id": "LUNAR_POLAR",
+    "name": "Low Lunar Polar Orbit",
+    "destination": "moon",
+    "altitude_km": 50,
+    "inclination_deg": 90.0,
+    "description": "Passes directly over the Moon's north and south poles every 2 hours, scanning deep permanently shadowed craters and mapping 100% of the lunar surface over 28 days.",
+    "real": {
+      "verified": true,
+      "source": "https://lunar.gsfc.nasa.gov/mission.html",
+      "source_name": "NASA LRO Mission Design & Flight Operations",
+      "delta_v_ms": 13100,
+      "eclipse_duration_min": 45
+    },
+    "game": {
+      "difficulty": "Hard",
+      "mass_penalty": 10,
+      "delta_v_cost": 25,
+      "science_multiplier": 1.5,
+      "eclipse_factor": 0.5
+    },
+    "image": "/assets/realistic/orbits/orbit-lunar.png"
+  },
+  {
+    "id": "LUNAR_EQUATORIAL",
+    "name": "Lunar Equatorial Frozen Orbit",
+    "destination": "moon",
+    "altitude_km": 100,
+    "inclination_deg": 28.5,
+    "description": "Stable orbit taking advantage of lunar mass anomalies (mascons) to minimize station-keeping fuel while continuously viewing landing sites and the lunar nearside.",
+    "real": {
+      "verified": true,
+      "source": "https://lunar.gsfc.nasa.gov/",
+      "source_name": "NASA GSAC Lunar Trajectory Analysis",
+      "delta_v_ms": 12800,
+      "eclipse_duration_min": 35
+    },
+    "game": {
+      "difficulty": "Medium",
+      "mass_penalty": 6,
+      "delta_v_cost": 20,
+      "science_multiplier": 1.15,
+      "eclipse_factor": 0.35
+    },
+    "image": "/assets/realistic/orbits/orbit-lunar-eq.png"
+  },
+  {
+    "id": "MARS_LOW_ORBIT",
+    "name": "Mars Low Science Orbit (Aerobraked)",
+    "destination": "mars",
+    "altitude_km": 250,
+    "inclination_deg": 93.0,
+    "description": "Achieved after a multi-month aerobraking campaign skimming Mars's thin carbon-dioxide atmosphere to conserve braking propellant.",
+    "real": {
+      "verified": true,
+      "source": "https://mars.nasa.gov/mro/mission/timeline/aerobraking/",
+      "source_name": "NASA MRO Aerobraking Campaign Archives",
+      "delta_v_ms": 15600,
+      "aerobraking_passes": 420
+    },
+    "game": {
+      "difficulty": "Expert",
+      "mass_penalty": 15,
+      "delta_v_cost": 35,
+      "science_multiplier": 1.8,
+      "eclipse_factor": 0.4
+    },
+    "image": "/assets/realistic/orbits/orbit-mars.png"
+  }
+]

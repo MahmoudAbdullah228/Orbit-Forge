@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ultraflex-solar-wings",
+    "name": "Deployable UltraFlex Solar Wings",
+    "title": "Deployable UltraFlex Solar Wings",
+    "category": "POWER",
+    "badge": "SOLAR POWER GENERATION",
+    "tag": "SOLAR POWER GENERATION",
+    "image": "/assets/realistic/power/solar-wings.png",
+    "shortDescription": "Accordion-fold solar arrays that unfold into circular or rectangular wings after orbital injection. They use advanced multi-junction GaAs cells to deliver over 300 W/kg specific power.",
+    "description": "Accordion-fold solar arrays that unfold into circular or rectangular wings after orbital injection. They use advanced multi-junction GaAs cells to deliver over 300 W/kg specific power.",
+    "engineeringSpecification": "Circular, accordion-fold fan-like solar arrays developed by Northrop Grumman. Utilizing lightweight, multi-junction gallium arsenide (GaAs) photovoltaic cells stretched over flexible structural gores, they unfold into a rigid circular wing after orbital injection, delivering over 300 W/kg specific power.",
+    "physicsAndDesignTradeOff": "Offers an exceptional power-to-mass ratio and compact stowed volume compared to rigid panels. However, solar flux drops inversely with the square of the distance from the Sun (1/r^2), making them ineffective beyond Jupiter's orbit or during prolonged planetary eclipses without heavy battery banks.",
+    "physics_tradeoff": "Offers an exceptional power-to-mass ratio and compact stowed volume compared to rigid panels. However, solar flux drops inversely with the square of the distance from the Sun (1/r^2), making them ineffective beyond Jupiter's orbit or during prolonged planetary eclipses without heavy battery banks.",
+    "affectedMissionConstraints": [
+      "Requires continuous Sun-pointing orientation (gimbal tracking)",
+      "Zero power generation during lunar/planetary night or eclipse periods",
+      "Structural fragility restricts use during atmospheric entry or high-thrust maneuvers"
+    ],
+    "constraints_affected": [
+      "Requires continuous Sun-pointing orientation (gimbal tracking)",
+      "Zero power generation during lunar/planetary night or eclipse periods",
+      "Structural fragility restricts use during atmospheric entry or high-thrust maneuvers"
+    ],
+    "realWorldFlightHeritage": "Powered NASA's Phoenix Mars Lander (2008), InSight Mars Lander (2018), and the Lucy asteroid mission (launched 2021).",
+    "real_heritage": "Powered NASA's Phoenix Mars Lander (2008), InSight Mars Lander (2018), and the Lucy asteroid mission (launched 2021).",
+    "subsystemMetrics": {
+      "mass": "~20–50 kg (scalable per wing)",
+      "cost": "~ – ",
+      "powerImpact": "+1,000 W to +6,000 W (at 1 AU)",
+      "dataRate": "None"
+    },
+    "stats": {
+      "mass": "~20–50 kg",
+      "cost": "~ – ",
+      "power": "+1,000 W to +6,000 W",
+      "data_rate": "None"
+    },
+    "source_url": "https://www.northropgrumman.com/space/ultraflex-solar-array-systems",
+    "source_name": "Northrop Grumman Space Systems"
+  },
+  {
+    "id": "mmrtg-nuclear-power",
+    "name": "Radioisotope Thermoelectric Generator (MMRTG)",
+    "title": "Radioisotope Thermoelectric Generator (MMRTG)",
+    "category": "POWER",
+    "badge": "NUCLEAR THERMAL POWER",
+    "tag": "NUCLEAR THERMAL POWER",
+    "image": "/assets/realistic/power/rtg.png",
+    "shortDescription": "Contains 4.8 kg of Plutonium-238 dioxide in solid ceramic pellets. As the plutonium decays naturally, it generates heat; solid-state thermocouples convert this directly into continuous electricity.",
+    "description": "Contains 4.8 kg of Plutonium-238 dioxide in solid ceramic pellets. As the plutonium decays naturally, it generates heat; solid-state thermocouples convert this directly into continuous electricity.",
+    "engineeringSpecification": "Contains 4.8 kg of Plutonium-238 dioxide in solid ceramic pellets. As the plutonium undergoes natural alpha decay, it generates approximately 2,000 watts of thermal heat, which solid-state lead-telluride thermocouples convert directly into continuous electrical power without moving parts.",
+    "physicsAndDesignTradeOff": "Provides uninterrupted, weather-independent electrical and thermal power day and night, regardless of distance from the Sun. The trade-off is high cost, strict nuclear launch safety protocols, low thermal-to-electric conversion efficiency (~6%), and gradual power decay (~0.8% per year).",
+    "physics_tradeoff": "Provides uninterrupted, weather-independent electrical and thermal power day and night, regardless of distance from the Sun. The trade-off is high cost, strict nuclear launch safety protocols, low thermal-to-electric conversion efficiency (~6%), and gradual power decay (~0.8% per year).",
+    "affectedMissionConstraints": [
+      "Requires active heat rejection radiators during cruise phase",
+      "Strict nuclear launch approval and containment cask requirements",
+      "Output declines slowly over multi-decade missions (87.7-year half-life)"
+    ],
+    "constraints_affected": [
+      "Requires active heat rejection radiators during cruise phase",
+      "Strict nuclear launch approval and containment cask requirements",
+      "Output declines slowly over multi-decade missions (87.7-year half-life)"
+    ],
+    "realWorldFlightHeritage": "Powers NASA's Curiosity Mars Rover (2012–present) and Perseverance Mars Rover (2020–present).",
+    "real_heritage": "Powers NASA's Curiosity Mars Rover (2012–present) and Perseverance Mars Rover (2020–present).",
+    "subsystemMetrics": {
+      "mass": "45 kg",
+      "cost": "~ –  (including Pu-238 fuel)",
+      "powerImpact": "+110 W continuous (at Beginning of Mission)",
+      "dataRate": "None"
+    },
+    "stats": {
+      "mass": "45 kg",
+      "cost": "~ – ",
+      "power": "+110 W continuous",
+      "data_rate": "None"
+    },
+    "source_url": "https://mars.nasa.gov/mars2020/spacecraft/rover/electrical-power/",
+    "source_name": "NASA Jet Propulsion Laboratory (JPL)"
+  },
+  {
+    "id": "ka-band-phased-array",
+    "name": "Ka-Band Phased Array Antenna",
+    "title": "Ka-Band Phased Array Antenna",
+    "category": "COMMS",
+    "badge": "HIGH-THROUGHPUT RADIO LINK",
+    "tag": "HIGH-THROUGHPUT RADIO LINK",
+    "image": "/assets/realistic/comms/phased-array.png",
+    "shortDescription": "Operating at 32 GHz, Ka-band frequencies carry four times more information per second than legacy X-band signals. The phased array allows electronic beam steering without mechanical gimbals.",
+    "description": "Operating at 32 GHz, Ka-band frequencies carry four times more information per second than legacy X-band signals. The phased array allows electronic beam steering without mechanical gimbals.",
+    "engineeringSpecification": "Operating at 32 GHz (deep space) or 26 GHz (near-Earth), this electronically steered antenna array uses phase shifters across hundreds of micro-emitters to focus high-frequency radio beams without mechanical gimbals, carrying up to four times more data than legacy X-band systems.",
+    "physicsAndDesignTradeOff": "Shorter wavelengths enable narrow beamwidths and massive bandwidth from compact apertures, while electronic steering eliminates mechanical vibration. However, high-frequency Ka-band signals suffer severe atmospheric attenuation (rain fade) on Earth and demand ultra-precise spacecraft pointing accuracy (<0.1°).",
+    "physics_tradeoff": "Shorter wavelengths enable narrow beamwidths and massive bandwidth from compact apertures, while electronic steering eliminates mechanical vibration. However, high-frequency Ka-band signals suffer severe atmospheric attenuation (rain fade) on Earth and demand ultra-precise spacecraft pointing accuracy (<0.1°).",
+    "affectedMissionConstraints": [
+      "Demands high-precision Attitude Determination and Control System (ADCS)",
+      "Requires high-power solid-state amplifiers (SSPA)",
+      "Vulnerable to weather interference at Earth Deep Space Network (DSN) stations"
+    ],
+    "constraints_affected": [
+      "Demands high-precision Attitude Determination and Control System (ADCS)",
+      "Requires high-power solid-state amplifiers (SSPA)",
+      "Vulnerable to weather interference at Earth Deep Space Network (DSN) stations"
+    ],
+    "realWorldFlightHeritage": "Flown on NASA's Mars Reconnaissance Orbiter (MRO), Kepler Space Telescope, and Lunar Reconnaissance Orbiter (LRO).",
+    "real_heritage": "Flown on NASA's Mars Reconnaissance Orbiter (MRO), Kepler Space Telescope, and Lunar Reconnaissance Orbiter (LRO).",
+    "subsystemMetrics": {
+      "mass": "15 – 35 kg",
+      "cost": "~ – ",
+      "powerImpact": "-80 W to -150 W (during transmission)",
+      "dataRate": "Up to 100 – 500 Mbps (lunar) / 6 Mbps (Mars)"
+    },
+    "stats": {
+      "mass": "15 – 35 kg",
+      "cost": "~ – ",
+      "power": "-80 W to -150 W",
+      "data_rate": "100 – 500 Mbps"
+    },
+    "source_url": "https://deepspace.jpl.nasa.gov/about/technology/ka-band/",
+    "source_name": "NASA Deep Space Network (DSN)"
+  },
+  {
+    "id": "low-lunar-polar-orbit",
+    "name": "Low Lunar Polar Orbit",
+    "title": "Low Lunar Polar Orbit",
+    "category": "ORBIT",
+    "badge": "ORBITAL TRAJECTORY",
+    "tag": "ORBITAL TRAJECTORY",
+    "image": "/assets/realistic/orbits/orbit-lunar.png",
+    "shortDescription": "A 50 km circular orbit passing directly over the Moon's north and south poles. As the Moon rotates beneath the orbiter over 27.3 days, the spacecraft achieves 100% global surface coverage.",
+    "description": "A 50 km circular orbit passing directly over the Moon's north and south poles. As the Moon rotates beneath the orbiter over 27.3 days, the spacecraft achieves 100% global surface coverage.",
+    "engineeringSpecification": "A circular orbital trajectory at an altitude of 50 km inclined at ~90°, passing directly over the Moon's north and south poles. As the Moon rotates beneath the orbital plane over a 27.3-day sidereal period, the spacecraft achieves 100% global surface coverage.",
+    "physicsAndDesignTradeOff": "Low altitude maximizes instrument spatial resolution and signal-to-noise ratio, while polar inclination grants access to Permanently Shadowed Regions (PSRs) containing water ice. Conversely, localized lunar mass concentrations ('mascons') perturb the orbit, requiring frequent station-keeping delta-v burns to prevent surface impact.",
+    "physics_tradeoff": "Low altitude maximizes instrument spatial resolution and signal-to-noise ratio, while polar inclination grants access to Permanently Shadowed Regions (PSRs) containing water ice. Conversely, localized lunar mass concentrations ('mascons') perturb the orbit, requiring frequent station-keeping delta-v burns to prevent surface impact.",
+    "affectedMissionConstraints": [
+      "Requires ~50–100 m/s per year in propellant for orbital maintenance",
+      "Experiences ~45-minute solar eclipses every ~113-minute orbital period",
+      "High orbital velocity (~1.65 km/s) demands fast sensor integration times"
+    ],
+    "constraints_affected": [
+      "Requires ~50–100 m/s per year in propellant for orbital maintenance",
+      "Experiences ~45-minute solar eclipses every ~113-minute orbital period",
+      "High orbital velocity (~1.65 km/s) demands fast sensor integration times"
+    ],
+    "realWorldFlightHeritage": "Utilized by NASA's Lunar Reconnaissance Orbiter (LRO) during its primary mapping phase (2009–2011) and ISRO's Chandrayaan-2 orbiter.",
+    "real_heritage": "Utilized by NASA's Lunar Reconnaissance Orbiter (LRO) during its primary mapping phase (2009–2011) and ISRO's Chandrayaan-2 orbiter.",
+    "subsystemMetrics": {
+      "orbitalPeriod": "~113 minutes",
+      "insertionDeltaV": "~850 – 900 m/s (from Lunar Transfer)",
+      "powerImpact": "40% eclipse cycle (requires battery storage)",
+      "dataRate": "Direct-to-Earth window ~65 min per orbit"
+    },
+    "stats": {
+      "altitude": "50 km",
+      "period": "~113 minutes",
+      "delta_v": "~850 – 900 m/s",
+      "coverage": "100% Global Polar"
+    },
+    "source_url": "https://lunar.gsfc.nasa.gov/mission.html",
+    "source_name": "NASA Goddard Space Flight Center"
+  },
+  {
+    "id": "laser-altimeter-lola-atlas",
+    "name": "Laser Altimeter (LOLA / ATLAS)",
+    "title": "Laser Altimeter (LOLA / ATLAS)",
+    "category": "INSTRUMENT",
+    "badge": "ACTIVE LIDAR SENSOR",
+    "tag": "ACTIVE LIDAR SENSOR",
+    "image": "/assets/realistic/instruments/altimeter.png",
+    "shortDescription": "Fires pulsed laser beams at the ground and measures the round-trip travel time of reflected photons. Because it generates its own illumination, it maps permanently shadowed polar craters.",
+    "description": "Fires pulsed laser beams at the ground and measures the round-trip travel time of reflected photons. Because it generates its own illumination, it maps permanently shadowed polar craters.",
+    "engineeringSpecification": "Fires short, high-repetition pulsed Nd:YAG laser beams (1064 nm or 532 nm) toward the planetary surface and measures the round-trip time-of-flight of reflected photons with picosecond precision. Generates high-resolution 3D topographic elevation maps and surface slope models.",
+    "physicsAndDesignTradeOff": "As an active sensor, it operates independently of solar illumination, allowing 3D mapping inside pitch-black polar craters. Its narrow footprint provides centimeter-level vertical accuracy, but swath width is narrow, requiring months of orbital passes to build contiguous global terrain models.",
+    "physics_tradeoff": "As an active sensor, it operates independently of solar illumination, allowing 3D mapping inside pitch-black polar craters. Its narrow footprint provides centimeter-level vertical accuracy, but swath width is narrow, requiring months of orbital passes to build contiguous global terrain models.",
+    "affectedMissionConstraints": [
+      "Requires nadir-pointing stability and precise star-tracker attitude knowledge",
+      "Laser diode lifetime limits continuous multi-year duty cycles",
+      "Optical receiver must be shielded from direct solar glare"
+    ],
+    "constraints_affected": [
+      "Requires nadir-pointing stability and precise star-tracker attitude knowledge",
+      "Laser diode lifetime limits continuous multi-year duty cycles",
+      "Optical receiver must be shielded from direct solar glare"
+    ],
+    "realWorldFlightHeritage": "LOLA aboard NASA's Lunar Reconnaissance Orbiter (LRO) and ATLAS aboard ICESat-2.",
+    "real_heritage": "LOLA aboard NASA's Lunar Reconnaissance Orbiter (LRO) and ATLAS aboard ICESat-2.",
+    "subsystemMetrics": {
+      "mass": "12.8 kg (LOLA)",
+      "cost": "~ – ",
+      "powerImpact": "-34 W",
+      "dataRate": "~30 – 50 kbps"
+    },
+    "stats": {
+      "mass": "12.8 kg",
+      "cost": "~ – ",
+      "power": "-34 W",
+      "data_rate": "~30 – 50 kbps"
+    },
+    "source_url": "https://lola.gsfc.nasa.gov/",
+    "source_name": "NASA GSFC LOLA Science Team"
+  },
+  {
+    "id": "neutron-spectrometer",
+    "name": "Thermal & Epithermal Neutron Spectrometer",
+    "title": "Thermal & Epithermal Neutron Spectrometer",
+    "category": "INSTRUMENT",
+    "badge": "NUCLEAR PHYSICS DETECTOR",
+    "tag": "NUCLEAR PHYSICS DETECTOR",
+    "image": "/assets/realistic/instruments/spectrometer.png",
+    "shortDescription": "Cosmic rays constantly strike planetary soil, knocking loose fast neutrons. When these neutrons collide with hydrogen atoms in subsurface water ice, they lose energy and slow down.",
+    "description": "Cosmic rays constantly strike planetary soil, knocking loose fast neutrons. When these neutrons collide with hydrogen atoms in subsurface water ice, they lose energy and slow down.",
+    "engineeringSpecification": "Detects secondary neutrons knocked loose from planetary regolith by galactic cosmic rays. By measuring the energy moderation of thermal and epithermal neutrons using Helium-3 gas proportional counters, it quantifies subsurface hydrogen concentrations down to 1 meter depth.",
+    "physicsAndDesignTradeOff": "Neutrons interact strongly with hydrogen nuclei (which have nearly identical mass), making this instrument the gold standard for detecting buried water ice without digging. However, spatial resolution is inherently coarse (roughly equal to the spacecraft's orbital altitude, e.g., ~50 km footprint).",
+    "physics_tradeoff": "Neutrons interact strongly with hydrogen nuclei (which have nearly identical mass), making this instrument the gold standard for detecting buried water ice without digging. However, spatial resolution is inherently coarse (roughly equal to the spacecraft's orbital altitude, e.g., ~50 km footprint).",
+    "affectedMissionConstraints": [
+      "Spacecraft must fly at low orbital altitudes (<100 km) for usable spatial resolution",
+      "Requires neutron shielding from spacecraft propellant tanks (hydrazine contains hydrogen)",
+      "Passive detector requires long integration times over target regions"
+    ],
+    "constraints_affected": [
+      "Spacecraft must fly at low orbital altitudes (<100 km) for usable spatial resolution",
+      "Requires neutron shielding from spacecraft propellant tanks (hydrazine contains hydrogen)",
+      "Passive detector requires long integration times over target regions"
+    ],
+    "realWorldFlightHeritage": "LEND aboard NASA's Lunar Reconnaissance Orbiter (LRO) and DAN aboard the Curiosity Mars Rover.",
+    "real_heritage": "LEND aboard NASA's Lunar Reconnaissance Orbiter (LRO) and DAN aboard the Curiosity Mars Rover.",
+    "subsystemMetrics": {
+      "mass": "25 kg (LEND)",
+      "cost": "~ – ",
+      "powerImpact": "-16 W",
+      "dataRate": "~4 kbps"
+    },
+    "stats": {
+      "mass": "25 kg",
+      "cost": "~ – ",
+      "power": "-16 W",
+      "data_rate": "~4 kbps"
+    },
+    "source_url": "https://mars.nasa.gov/msl/spacecraft/instruments/dan/",
+    "source_name": "NASA Mars Science Laboratory"
+  },
+  {
+    "id": "subsurface-radar-sounder",
+    "name": "Subsurface Radar Sounder",
+    "title": "Subsurface Radar Sounder",
+    "category": "INSTRUMENT",
+    "badge": "GROUND PENETRATING RADAR",
+    "tag": "GROUND PENETRATING RADAR",
+    "image": "/assets/realistic/instruments/radar.png",
+    "shortDescription": "Transmits high-frequency radio waves into the ground. When the waves pass through boundaries between dry rock, porous soil, and subsurface ice layers, echoes reflect back to the orbiter.",
+    "description": "Transmits high-frequency radio waves into the ground. When the waves pass through boundaries between dry rock, porous soil, and subsurface ice layers, echoes reflect back to the orbiter.",
+    "engineeringSpecification": "Transmits low-to-high frequency radio waves (typically 15–60 MHz) via a long dipole antenna into the planetary crust. Echoes reflected from dielectric interfaces reveal buried geological strata, lava tubes, and deep subsurface water-ice deposits down to several kilometers.",
+    "physicsAndDesignTradeOff": "Penetrates meters to kilometers beneath the surface where optical and neutron sensors cannot reach. The trade-off is the requirement for a massive deployable dipole antenna (10 to 40 meters long) and susceptibility to surface clutter from rough terrain.",
+    "physics_tradeoff": "Penetrates meters to kilometers beneath the surface where optical and neutron sensors cannot reach. The trade-off is the requirement for a massive deployable dipole antenna (10 to 40 meters long) and susceptibility to surface clutter from rough terrain.",
+    "affectedMissionConstraints": [
+      "Requires deployment of 10m+ boom antennas, affecting spacecraft moment of inertia",
+      "High peak power pulses during radar transmission",
+      "Generates large raw radargram datasets requiring onboard compression"
+    ],
+    "constraints_affected": [
+      "Requires deployment of 10m+ boom antennas, affecting spacecraft moment of inertia",
+      "High peak power pulses during radar transmission",
+      "Generates large raw radargram datasets requiring onboard compression"
+    ],
+    "realWorldFlightHeritage": "SHARAD on Mars Reconnaissance Orbiter (MRO), MARSIS on Mars Express, and LRS on JAXA's Kaguya (SELENE).",
+    "real_heritage": "SHARAD on Mars Reconnaissance Orbiter (MRO), MARSIS on Mars Express, and LRS on JAXA's Kaguya (SELENE).",
+    "subsystemMetrics": {
+      "mass": "16 – 20 kg",
+      "cost": "~ – ",
+      "powerImpact": "-50 W to -100 W (peak)",
+      "dataRate": "~1 – 10 Mbps (burst)"
+    },
+    "stats": {
+      "mass": "16 – 20 kg",
+      "cost": "~ – ",
+      "power": "-50 W to -100 W (peak)",
+      "data_rate": "~1 – 10 Mbps"
+    },
+    "source_url": "https://mars.nasa.gov/mro/mission/instruments/sharad/",
+    "source_name": "NASA MRO Science Office & ASI"
+  },
+  {
+    "id": "rocket-lab-electron",
+    "name": "Rocket Lab Electron Launcher",
+    "title": "Rocket Lab Electron Launcher",
+    "category": "VEHICLE",
+    "badge": "SMALL-LIFT VEHICLE",
+    "tag": "SMALL-LIFT VEHICLE",
+    "image": "/assets/realistic/vehicles/rocket-light.png",
+    "shortDescription": "The Electron rocket is an 18-meter two-stage orbital launch vehicle designed specifically for small satellites and CubeSats.",
+    "description": "The Electron rocket is an 18-meter two-stage orbital launch vehicle designed specifically for small satellites and CubeSats.",
+    "engineeringSpecification": "The Electron rocket is an 18-meter two-stage orbital launch vehicle designed specifically for small satellites and CubeSats. It features Rutherford electric-pump-fed rocket engines made by 3D printing and an ultra-light carbon composite fuselage.",
+    "physicsAndDesignTradeOff": "Small launch vehicles are extremely agile and cost-effective for dedicated small payloads (.5M), but have strict mass limits (up to 300 kg to LEO). They cannot send heavy landers or multi-instrument spacecraft beyond Earth orbit.",
+    "physics_tradeoff": "Small launch vehicles are extremely agile and cost-effective for dedicated small payloads (.5M), but have strict mass limits (up to 300 kg to LEO). They cannot send heavy landers or multi-instrument spacecraft beyond Earth orbit.",
+    "affectedMissionConstraints": [
+      "Maximum spacecraft mass strictly capped at 300 kg",
+      "Confined 1.2-meter fairing volume",
+      "Low launch cost preserves budget for instruments"
+    ],
+    "constraints_affected": [
+      "Maximum spacecraft mass strictly capped at 300 kg",
+      "Confined 1.2-meter fairing volume",
+      "Low launch cost preserves budget for instruments"
+    ],
+    "realWorldFlightHeritage": "Launched NASA CAPSTONE (Cislunar Autonomous Positioning System Technology Operations and Navigation Experiment) into lunar orbit in 2022.",
+    "real_heritage": "Launched NASA CAPSTONE (Cislunar Autonomous Positioning System Technology Operations and Navigation Experiment) into lunar orbit in 2022.",
+    "subsystemMetrics": {
+      "massCapacity": "300 kg to LEO",
+      "cost": ".5M",
+      "powerImpact": "None (launcher)",
+      "dataRate": "None"
+    },
+    "stats": {
+      "mass_capacity": "300 kg to LEO",
+      "cost": ".5M",
+      "power_impact": "None",
+      "data_rate": "None"
+    },
+    "source_url": "https://www.rocketlabusa.com/launch/electron/",
+    "source_name": "Rocket Lab Payload User Guide"
+  },
+  {
+    "id": "spacex-falcon-9",
+    "name": "SpaceX Falcon 9",
+    "title": "SpaceX Falcon 9",
+    "category": "VEHICLE",
+    "badge": "MEDIUM-TO-HEAVY LAUNCHER",
+    "tag": "MEDIUM-TO-HEAVY LAUNCHER",
+    "image": "/assets/realistic/vehicles/rocket-medium.png",
+    "shortDescription": "A reusable two-stage rocket powered by liquid oxygen and rocket-grade kerosene (RP-1). It can lift over 22,800 kg to Low Earth Orbit.",
+    "description": "A reusable two-stage rocket powered by liquid oxygen and rocket-grade kerosene (RP-1). It can lift over 22,800 kg to Low Earth Orbit.",
+    "engineeringSpecification": "A 70-meter, two-stage, partially reusable medium-to-heavy orbital launch vehicle powered by nine Merlin 1D engines on the first stage and a single Merlin Vacuum engine on the second, burning sub-cooled RP-1 kerosene and liquid oxygen (LOX).",
+    "physicsAndDesignTradeOff": "Propulsive first-stage recovery drastically reduces launch cost per kilogram while offering massive payload capacity (22,800 kg to LEO; ~4,000+ kg to Trans-Lunar Injection). However, reserving propellant for booster landing reduces maximum expendable payload performance by roughly 30%.",
+    "physics_tradeoff": "Propulsive first-stage recovery drastically reduces launch cost per kilogram while offering massive payload capacity (22,800 kg to LEO; ~4,000+ kg to Trans-Lunar Injection). However, reserving propellant for booster landing reduces maximum expendable payload performance by roughly 30%.",
+    "affectedMissionConstraints": [
+      "Spacious 5.2-meter diameter payload fairing accommodates large orbiters or landers",
+      "High thrust-to-weight ratio requires payload qualification for ~4–6G axial acceleration",
+      "Rideshare options reduce cost further but dictate fixed orbital inclination"
+    ],
+    "constraints_affected": [
+      "Spacious 5.2-meter diameter payload fairing accommodates large orbiters or landers",
+      "High thrust-to-weight ratio requires payload qualification for ~4–6G axial acceleration",
+      "Rideshare options reduce cost further but dictate fixed orbital inclination"
+    ],
+    "realWorldFlightHeritage": "Launched NASA's DART asteroid impactor, Europa Clipper (Falcon Heavy derivative), Crew Dragon missions, and Intuitive Machines' IM-1 lunar lander.",
+    "real_heritage": "Launched NASA's DART asteroid impactor, Europa Clipper (Falcon Heavy derivative), Crew Dragon missions, and Intuitive Machines' IM-1 lunar lander.",
+    "subsystemMetrics": {
+      "massCapacity": "22,800 kg to LEO / ~4,020 kg to TLI",
+      "cost": "~ (dedicated) / ~.1M+ (rideshare)",
+      "powerImpact": "None (launcher)",
+      "dataRate": "None"
+    },
+    "stats": {
+      "mass_capacity": "22,800 kg to LEO / 4,020 kg TLI",
+      "cost": "~",
+      "power_impact": "None",
+      "data_rate": "None"
+    },
+    "source_url": "https://www.spacex.com/vehicles/falcon-9/",
+    "source_name": "SpaceX Falcon 9 User Guide"
+  },
+  {
+    "id": "3d-stereo-mapping-camera",
+    "name": "3D Stereo Mapping Camera",
+    "title": "3D Stereo Mapping Camera",
+    "category": "INSTRUMENT",
+    "badge": "OPTICAL REMOTE SENSING",
+    "tag": "OPTICAL REMOTE SENSING",
+    "image": "/assets/realistic/instruments/camera.png",
+    "shortDescription": "Twin optical cameras configured at offset viewing angles take simultaneous stereoscopic images of planetary surfaces to reconstruct high-resolution 3D elevation models.",
+    "description": "Twin optical cameras configured at offset viewing angles take simultaneous stereoscopic images of planetary surfaces to reconstruct high-resolution 3D elevation models.",
+    "engineeringSpecification": "Twin high-resolution panchromatic/multispectral optical cameras mounted at fixed forward and aft stereo viewing angles (~15°–25° off-nadir). Captures simultaneous overlapping image strips to reconstruct sub-meter Digital Elevation Models (DEMs) via photogrammetry.",
+    "physicsAndDesignTradeOff": "Provides exceptional horizontal spatial resolution (down to 0.5 meters/pixel) for landing site hazard certification (boulders and slopes). Unlike laser altimeters, however, it relies completely on sunlight and fails in permanently shadowed craters or low-angle polar shadows.",
+    "physics_tradeoff": "Provides exceptional horizontal spatial resolution (down to 0.5 meters/pixel) for landing site hazard certification (boulders and slopes). Unlike laser altimeters, however, it relies completely on sunlight and fails in permanently shadowed craters or low-angle polar shadows.",
+    "affectedMissionConstraints": [
+      "Completely blind in shadowed craters and lunar night",
+      "Generates massive uncompressed image files requiring high-speed Ka-band downlink",
+      "Requires precise thermal control to prevent optical focus drift"
+    ],
+    "constraints_affected": [
+      "Completely blind in shadowed craters and lunar night",
+      "Generates massive uncompressed image files requiring high-speed Ka-band downlink",
+      "Requires precise thermal control to prevent optical focus drift"
+    ],
+    "realWorldFlightHeritage": "HiRISE & CTX on Mars Reconnaissance Orbiter (MRO), and LROC Narrow Angle Cameras on Lunar Reconnaissance Orbiter.",
+    "real_heritage": "HiRISE & CTX on Mars Reconnaissance Orbiter (MRO), and LROC Narrow Angle Cameras on Lunar Reconnaissance Orbiter.",
+    "subsystemMetrics": {
+      "mass": "10 – 15 kg",
+      "cost": "~ – ",
+      "powerImpact": "-25 W to -40 W",
+      "dataRate": "~10 – 50 Mbps (during imaging)"
+    },
+    "stats": {
+      "mass": "10 – 15 kg",
+      "cost": "~ – ",
+      "power": "-25 W to -40 W",
+      "data_rate": "~10 – 50 Mbps"
+    },
+    "source_url": "https://www.lroc.asu.edu/",
+    "source_name": "NASA LROC Science Operations Center"
+  }
+]

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="#0A0626"/>
+    <!-- Earth in center -->
+    <circle cx="32" cy="32" r="14" fill="#12A8E8"/>
+    <!-- Circular LEO Track -->
+    <ellipse cx="32" cy="32" rx="26" ry="12" stroke="#2EE6A8" stroke-width="3" fill="none" stroke-dasharray="4,2"/>
+    <!-- Satellite dot -->
+    <rect x="48" y="24" width="6" height="6" fill="#EEF1F8"/>
+  
+</svg>

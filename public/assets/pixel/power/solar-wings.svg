@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" shape-rendering="crispEdges" style="image-rendering: pixelated;">
+
+    <rect width="64" height="64" fill="none"/>
+    <!-- Spacecraft body in center -->
+    <rect x="26" y="24" width="12" height="16" fill="#EEF1F8"/>
+    <!-- Left Wing -->
+    <rect x="4" y="20" width="20" height="24" fill="#12A8E8"/>
+    <rect x="4" y="20" width="20" height="24" fill="none" stroke="#FFE45C" stroke-width="2"/>
+    <rect x="4" y="31" width="20" height="2" fill="#FFE45C"/>
+    <!-- Right Wing -->
+    <rect x="40" y="20" width="20" height="24" fill="#12A8E8"/>
+    <rect x="40" y="20" width="20" height="24" fill="none" stroke="#FFE45C" stroke-width="2"/>
+    <rect x="40" y="31" width="20" height="2" fill="#FFE45C"/>
+  
+</svg>
